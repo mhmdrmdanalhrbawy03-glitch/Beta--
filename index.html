@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أقوى منصة تعليمية في مصر | EduEgy</title>
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    
+    <style>
+      body {
+        font-family: 'Cairo', sans-serif;
+      }
+      .animate-gradient {
+        background: linear-gradient(-45deg, #1e3a8a, #1e40af, #065f46, #064e3b);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    </style>
+
+    <!-- شلت index.css لانه مش موجود في السيرفر وبيعمل 404 وبيوقف التحميل في بعض المتصفحات -->
+    <!-- لو عندك ملف CSS حقيقي رجعه تاني -->
+  </head>
+  <body class="bg-gray-50 text-gray-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-500 overflow-x-hidden">
+    <div id="root"></div>
+    
+    <!-- ده ملفك المبني جاهز، هو لوحده كفاية -->
+    <script type="module" crossorigin src="/assets/index-BIR-APai.js"></script>
+  </body>
+</html>
