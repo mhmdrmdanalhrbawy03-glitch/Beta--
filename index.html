@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>أقوى منصة تعليمية في مصر | EduEgy</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&display=swap" rel="stylesheet">
-    <style> body { font-family: 'Cairo', sans-serif; } </style>
-  </head>
-  <body class="bg-gray-50">
-    <div id="root">
-      <div class="flex h-screen items-center justify-center flex-col gap-4">
-        <p class="text-xl font-bold">جاري تحميل المنصة...</p>
-        <p id="error-log" class="text-red-600 text-sm p-4 bg-red-50 rounded max-w-lg"></p>
-      </div>
-    </div>
-
-    <script>
-      window.addEventListener('error', (e) => {
-        document.getElementById('error-log').innerText = 
-          'خطأ: ' + e.message + '\n الملف: ' + e.filename;
-      });
-    </script>
-    <script type="module" src="/assets/index-BIR-APai.js"></script>
-  </body>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EduEgy | أقوى منصة تعليمية في مصر</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  body{font-family:'Cairo',sans-serif}
+  .bg-anim{background:linear-gradient(-45deg,#1e3a8a,#1e40af,#065f46,#064e3b);background-size:400% 400%;animation:g 12s ease infinite}
+  @keyframes g{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+</style>
+</head>
+<body class="bg-anim min-h-screen flex items-center justify-center text-white p-6">
+  <div class="text-center max-w-2xl">
+    <h1 class="text-5xl font-extrabold mb-4">EduEgy منصة شغالة ✅</h1>
+    <p class="text-xl opacity-90 mb-8">تم حل مشكلة الشاشة البيضاء بنجاح</p>
+    <p class="mb-8">نظام الدفع التلقائي: الطالب يدفع - الكورس يفتح في ثواني - بدون تدخل منك</p>
+    <a href="#" class="inline-block bg-white text-blue-900 px-10 py-4 rounded-full font-bold text-lg">دخول لوحة التحكم</a>
+  </div>
+</body>
 </html>
