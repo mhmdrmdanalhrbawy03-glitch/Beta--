@@ -3,21 +3,55 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>EduEgy | أقوى منصة تعليمية في مصر</title>
+<title>أقوى منصة تعليمية في مصر | EduEgy</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-  body{font-family:'Cairo',sans-serif}
-  .bg-anim{background:linear-gradient(-45deg,#1e3a8a,#1e40af,#065f46,#064e3b);background-size:400% 400%;animation:g 12s ease infinite}
-  @keyframes g{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+body{font-family:'Cairo',sans-serif}
+.animate-gradient{background:linear-gradient(-45deg,#1e3a8a,#1e40af,#065f46,#064e3b);background-size:400% 400%;animation:gradient 15s ease infinite}
+@keyframes gradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 </style>
 </head>
-<body class="bg-anim min-h-screen flex items-center justify-center text-white p-6">
-  <div class="text-center max-w-2xl">
-    <h1 class="text-5xl font-extrabold mb-4">EduEgy منصة شغالة ✅</h1>
-    <p class="text-xl opacity-90 mb-8">تم حل مشكلة الشاشة البيضاء بنجاح</p>
-    <p class="mb-8">نظام الدفع التلقائي: الطالب يدفع - الكورس يفتح في ثواني - بدون تدخل منك</p>
-    <a href="#" class="inline-block bg-white text-blue-900 px-10 py-4 rounded-full font-bold text-lg">دخول لوحة التحكم</a>
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
+
+<!-- Navbar -->
+<nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-extrabold text-blue-900">EduEgy</h1>
+    <a href="#dashboard" class="bg-blue-900 text-white px-6 py-2 rounded-full font-bold">دخول المنصة</a>
   </div>
+</nav>
+
+<!-- Hero -->
+<section class="animate-gradient min-h-screen flex items-center justify-center text-white pt-20 px-6 text-center">
+  <div class="max-w-4xl">
+    <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">أقوى منصة تعليمية في مصر لإدارة شغلك كمدرس</h2>
+    <p class="text-xl opacity-90 mb-8">الطالب يدفع - الكورس يفتح تلقائي - الفلوس توصلك - بدون تدخل منك</p>
+    <div class="flex gap-4 justify-center flex-wrap">
+      <a href="#" class="bg-white text-blue-900 px-8 py-3 rounded-full font-bold">ابدأ مجاناً الآن</a>
+      <a href="#features" class="border-2 border-white px-8 py-3 rounded-full font-bold">شوف المميزات</a>
+    </div>
+    <div class="mt-12 grid grid-cols-3 gap-4 bg-white/10 p-6 rounded-2xl backdrop-blur">
+      <div><p class="text-3xl font-bold">+500</p><p class="text-sm">مدرس</p></div>
+      <div><p class="text-3xl font-bold">+20k</p><p class="text-sm">طالب</p></div>
+      <div><p class="text-3xl font-bold">24/7</p><p class="text-sm">دفع تلقائي</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="py-20 px-6 max-w-7xl mx-auto">
+  <h3 class="text-3xl font-extrabold text-center mb-12">ليه EduEgy مختلفة؟</h3>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-white p-8 rounded-2xl shadow-lg"><h4 class="font-bold text-xl mb-2">💳 دفع تلقائي</h4><p class="text-gray-600">فودافون كاش وفوري وباي موب يفتحوا الكورس لوحدهم</p></div>
+    <div class="bg-white p-8 rounded-2xl shadow-lg"><h4 class="font-bold text-xl mb-2">👨‍🎓 إدارة طلاب</h4><p class="text-gray-600">كود لكل طالب ومتابعة حضور ودرجات</p></div>
+    <div class="bg-white p-8 rounded-2xl shadow-lg"><h4 class="font-bold text-xl mb-2">📊 تقارير ذكية</h4><p class="text-gray-600">اعرف مين دفع ومين لسه وارباحك باليوم</p></div>
+  </div>
+</section>
+
+<footer class="bg-slate-950 text-white py-8 text-center">
+  <p>EduEgy © 2026 - المنصة شغالة بدون شاشة بيضاء ✅</p>
+</footer>
+
 </body>
 </html>
